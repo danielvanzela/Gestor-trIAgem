@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor</title>
+
+    <link rel="stylesheet" href="../../src/css/style.css">
+    <link rel="shortcut icon" href="../../src/img/g6.png" type="image/x-icon">
+</head>
+
+<body>
+    <header class="title-hospital">
+        <img src="../../src/img/g34.png" alt="Logo Triagem quadrada azul">
+        <span>
+            <h1>Hospital Santa Luzia</h1>
+            <p>
+                Rua José Antonio, 3694
+            </p>
+            <p>
+                Centro, Andradas - MG (37795-000)
+            </p>
+        </span>
+        <div class="bandeira-emergencia">
+            <span>
+                <h4>EMERGÊNCIA</h4>
+            </span>
+            <span>
+                <h4>MUITO URGENTE</h4>
+            </span>
+            <span>
+                <h4>URGENTE</h4>
+            </span>
+            <span>
+                <h4>POUCO URGENTE</h4>
+            </span>
+            <span>
+                <h4>NÃO URGENTE</h4>
+            </span>
+        </div>
+
+        <input type="checkbox" name="" id="checkMenu">
+        <label class="icon-menu" for="checkMenu">
+            <i>
+                <span></span>
+                <span></span>
+                <span></span>
+            </i>
+        </label>
+        <nav class="menu ">
+            <ul class="content-menu">
+                <li class="item-menu">
+                    <span class="icon-menu-profile">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </span>
+                    <a href="../perfil/profile.html">Perfil</a>
+                </li>
+                <li class="item-menu">
+                    <span class="icon-menu-config">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </span>
+                    <a href="../perfil/profile.html">Configurações</a>
+                </li>
+                <li class="item-menu">
+                    <span class="icon-menu-exit">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </span>
+                    <a class="color-exit" href="#">Sair</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content-gestor">
+        <!-- tabela onde exibe as fichas em atendimento -->
+        <table class="table-fichas" style="width:100%">
+            <tr>
+                <th>N°</th>
+                <th>Paciente</th>
+                <th>Risco</th>
+                <th>Entrada</th>
+                <th>Status</th>
+                <th>Especialista</th>
+                <th>Ficha</th>
+            </tr>
+            <tr>
+                <td>007</td>
+                <td>James Arthur</td>
+                <td>Urgente</td>
+                <td>07/04/2023 16:37:26</td>
+                <td>Em atendimento</td>
+                <td>Clinico Geral</td>
+                <td><a href="#"><img width="15px" src="https://cdn-icons-png.flaticon.com/512/337/337946.png"
+                            alt="Icone de baixar PDF"></a></td>
+            </tr>
+            <tr>
+                <td>007</td>
+                <td>James Arthur</td>
+                <td>Não Urgente</td>
+                <td>07/04/2023 16:37:26</td>
+                <td>Em atendimento</td>
+                <td>Clinico Geral</td>
+                <td><a href="#"><img width="15px" src="https://cdn-icons-png.flaticon.com/512/337/337946.png"
+                            alt="Icone de baixar PDF"></a></td>
+            </tr>
+        </table>
+        <!-- dashboard -->
+        <div class="content-feedback">
+            <div class="content-dashboard">
+                <h1>4.44</h1>
+                <p>baseado em 23 respostas</p>
+                <span class="star-avaliable">
+                    ⭐⭐⭐⭐⭐
+                </span>
+                <section>
+                    <div>
+                        <p>5 estrelas</p><span class="progress"><span></span></span>
+                    </div>
+                    <div>
+                        <p>4 estrelas</p><span class="progress"></span>
+                    </div>
+                    <div>
+                        <p>3 estrelas</p><span class="progress"></span>
+                    </div>
+                    <div>
+                        <p>2 estrelas</p><span class="progress"></span>
+                    </div>
+                    <div>
+                        <p>1 estrelas</p><span class="progress"></span>
+                    </div>
+
+                </section>
+            </div>
+
+            <div class="content-coments">
+                <div class="coment item-flex">
+                    <span>⭐⭐⭐🌟</span>
+                    <h3>Siclano - 00/00/0000</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto molestiae unde tempore
+                        repellendus eos esse deserunt velit laudantium magni, reiciendis neque officia ab accusantium
+                        perferendis obcaecati asperiores impedit voluptatibus earum!
+                    </p>
+                </div>
+                <div class="coment item-flex">
+                    <span>⭐⭐⭐🌟</span>
+                    <h3>Siclano - 00/00/0001</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto molestiae unde tempore
+                        repellendus eos esse deserunt velit laudantium magni, reiciendis neque officia ab accusantium
+                        perferendis obcaecati asperiores impedit voluptatibus earum!
+                    </p>
+                </div>
+                <div class="coment item-flex">
+                    <span>⭐⭐⭐🌟</span>
+                    <h3>Siclano - 00/00/0000</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto molestiae unde tempore
+                        repellendus eos esse deserunt velit laudantium magni, reiciendis neque officia ab accusantium
+                        perferendis obcaecati asperiores impedit voluptatibus earum!
+                    </p>
+                </div>
+                <div class="coment item-flex">
+                    <span>⭐⭐⭐🌟</span>
+                    <h3>Siclano - 00/00/0001</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto molestiae unde tempore
+                        repellendus eos esse deserunt velit laudantium magni, reiciendis neque officia ab accusantium
+                        perferendis obcaecati asperiores impedit voluptatibus earum!
+                    </p>
+                </div>
+                <div class="coment item-flex">
+                    <span>⭐⭐⭐🌟</span>
+                    <h3>Siclano - 00/00/0000</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto molestiae unde tempore
+                        repellendus eos esse deserunt velit laudantium magni, reiciendis neque officia ab accusantium
+                        perferendis obcaecati asperiores impedit voluptatibus earum!
+                    </p>
+                </div>
+                <div class="coment item-flex">
+                    <span>⭐⭐⭐🌟</span>
+                    <h3>Siclano - 00/00/0001</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto molestiae unde tempore
+                        repellendus eos esse deserunt velit laudantium magni, reiciendis neque officia ab accusantium
+                        perferendis obcaecati asperiores impedit voluptatibus earum!
+                    </p>
+                </div>
+                <div class="coment item-flex">
+                    <span>⭐⭐⭐🌟</span>
+                    <h3>Siclano - 00/00/0000</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto molestiae unde tempore
+                        repellendus eos esse deserunt velit laudantium magni, reiciendis neque officia ab accusantium
+                        perferendis obcaecati asperiores impedit voluptatibus earum!
+                    </p>
+                </div>
+                <div class="coment item-flex">
+                    <span>⭐⭐⭐🌟</span>
+                    <h3>Siclano - 00/00/0001</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto molestiae unde tempore
+                        repellendus eos esse deserunt velit laudantium magni, reiciendis neque officia ab accusantium
+                        perferendis obcaecati asperiores impedit voluptatibus earum!
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

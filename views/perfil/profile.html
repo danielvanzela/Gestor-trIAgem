@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="shortcut icon" href="../../src/img/g34.png" type="image/png">
+    <link rel="stylesheet" href="../../src/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+
+<body>
+    <nav class="content-nav">
+        <img src="https://www.extecamp.unicamp.br/parto_alternativo/simposio/imagens/fotos/images/Entrada%20do%20Hospital.jpeg"
+            alt="Perfil do hospital">
+        <ul>
+            <h1>Hospital Santa Marina</h1>
+            <li id="licontenthospital">
+                <p>Rua José Antonio, 3694</p>
+                <p>Centro</p>
+                <p>Andradas - MG (37795-000)</p>
+
+            </li>
+            <li onclick="r_senha()">Editar Informações</li>
+            <li onclick="r_info()">Redefinir Senha</li>
+        </ul>
+    </nav>
+
+    <article class="article-edit-info">
+
+        <form action="" id="edit_info" style="display: flex;" class="form-article">
+            <h1>Atualize suas informações</h1>
+            <input type="text" name="" placeholder="Nome: Hospital Santa Marina" id="">
+            <input type="text" name="" placeholder="Rua: Rua José Antonio" id="">
+            <input type="text" name="" placeholder="Numero: 3694" id="">
+            <input type="text" name="" placeholder="Bairro: Centro" id="">
+            <input type="text" name="" placeholder="Cidade: Andradas" id="">
+            <input type="text" name="" placeholder="Estado: MG" id="">
+            <input type="text" name="" placeholder="CEP: 37795-000" id="">
+            <input type="submit" class="submit-update-info" value="Atualizar">
+        </form>
+
+        <form action="" id="edit_pass" style="display: none;" class="form-article">
+            <h1>Redefina sua Senha</h1>
+            <input type="password" name="" id="firm_pass" placeholder="Digite sua Nova Senha..." id="">
+            <span class="button_revela um">
+                <i id="view_passw" class="bi bi-eye-slash-fill" onclick="view_pass()"></i>
+            </span>
+            <input type="password"  name="" placeholder="Confirme sua Nova Senha..." id="confirm_pass">
+            <input type="submit" class="submit-update-info"  value="Confirmar Nova Senha">
+            <span class="button_revela dois">
+                <i id="view_passc" class="bi bi-eye-slash-fill" onclick="view_pass_c()"></i>
+            </span>
+        </form>
+    </article>
+    <script>
+        function view_pass() {
+            var eyeIcon = document.getElementById("view_passw");
+            if (eyeIcon.classList.contains("bi-eye-fill")) {
+                eyeIcon.classList.remove("bi-eye-fill");
+                eyeIcon.classList.add("bi-eye-slash-fill");
+                document.getElementById("firm_pass").type = "password";
+            } else {
+                eyeIcon.classList.remove("bi-eye-slash-fill");
+                eyeIcon.classList.add("bi-eye-fill");
+                document.getElementById("firm_pass").type = "text";
+            }
+        }
+        function view_pass_c() {
+            var eyeIcon = document.getElementById("view_passc");
+            if (eyeIcon.classList.contains("bi-eye-fill")) {
+                eyeIcon.classList.remove("bi-eye-fill");
+                eyeIcon.classList.add("bi-eye-slash-fill");
+                document.getElementById("confirm_pass").type = "password";
+            } else {
+                eyeIcon.classList.remove("bi-eye-slash-fill");
+                eyeIcon.classList.add("bi-eye-fill");
+                document.getElementById("confirm_pass").type = "text";
+            }
+        }
+
+        var elementoa = document.getElementById("edit_pass");
+        var elementob = document.getElementById("edit_info");
+
+        function r_senha() {
+            elementoa.style.display = "none";
+            elementob.style.display = "flex";
+        };
+
+        function r_info() {
+            elementoa.style.display = "flex";
+            elementob.style.display = "none";
+        };
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <title>Gestor trIAgem</title>
+    <link rel="stylesheet" href="../src/css/style.css">
+    <link rel="shortcut icon" href="../src/img/g6.png" type="image/x-icon">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="tab-buttons">
+                <button class="tab-btn selected" content-id="inicio">Home</button>
+                <button class="tab-btn" content-id="login">Login</button>
+                <button class="tab-btn" content-id="cadastro">Cadastro</button>
+            </div>
+            <div class="tab-contents">
+
+                <!-- divisão home -->
+                <div class="content show content-home" id="inicio">
+                    <section class="title-home">
+                        <h1>gestor</h1>
+                        <img src="../src/img/logo_IA_amarela.png" alt="Logo do Sistema Triagem">
+                    </section>
+                    <p>Cuide da sua saúde com a ajuda da inteligência artificial! Descobrir o que pode ser seus sintomas
+                        em minutos, conversando com nossa assistente!</p>
+                    <section class="button-home">
+                        <button class="tab-btn" content-id="login"><a href="home/home.html">Login</a></button>
+                        <button class="tab-btn" content-id="cadastro">Cadastro</button>
+                    </section>
+                </div>
+
+                <!-- divisão login -->
+                <div class="content content-login" id="login">
+                    <form action="" method="post">
+                        <h1>login</h1>
+                        <input type="text" required name="emailHospital" id="emailHospital"
+                            placeholder="Digite seu E-mail...">
+                        <input type="password" required name="senhaHospital" id="senhaHospital"
+                            placeholder="Digite sua Senha...">
+                        <p>
+                            <input type="checkbox" name="manterlogado" id="manterlogado" value="" />
+                            <label for="manterlogado">Manter-me logado</label>
+                        </p>
+                        <input type="submit" value="Login" id="loginL">
+                        <input type="button" value="Resetar senha" id="ResetPassword">
+                    </form>
+                </div>
+
+                <!-- divisão cadastro -->
+                <div class="content content-cadastro" id="cadastro">
+                    <h1>cadastro</h1>
+                    <form action="" method="post">
+                        <section>
+                            <input type="text" required name="cnpjHospital" id="cnpjHospital" maxlength="18"
+                                placeholder="CNPJ">
+                            <input type="text" required name="nomeHospital" id="nomeHospital"
+                                placeholder="Nome do Hospital">
+                            <input type="text" required name="cepHospital" id="cepHospital" maxlength="9"
+                                placeholder="CEP">
+                            <input type="text" required name="ruaHospital" id="ruaHospital"
+                                placeholder="Logradouro/Rua">
+                            <input type="number" required name="numeroHospital" id="numeroHospital"
+                                placeholder="Numero">
+                            <input type="text" required name="bairroHospital" id="bairroHospital" placeholder="Bairro">
+                            <input type="text" required name="cidadeHospital" id="cidadeHospital" placeholder="Cidade">
+                            <input type="text" required name="estadoHospital" id="estadoHospital" placeholder="Estado">
+                            <input type="text" required name="emailCadHospital" id="emailCadHospital"
+                                placeholder="Email">
+                            <input type="text" required name="senhaCadHospital" id="senhaCadHospital"
+                                placeholder="Senha">
+                        </section>
+                        <input type="submit" value="Cadastrar">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="container-background">
+            <img src="../src/img/22c468b0-fd98-4da4-ac65-19f20c680fe0.jpg" alt="Consulta medica">
+        </div>
+    </main>
+
+    <script src="../src/java script/script.js"></script>
+</body>
+
+</html>
